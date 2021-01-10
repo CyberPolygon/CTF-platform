@@ -15,6 +15,7 @@ services:
 
   db:
     image: postgres
+    restart: always
     container_name: db
     volumes:
       - postgres_data:/var/lib/postgresql/data/
