@@ -1,6 +1,6 @@
 from django.db import models
-from polygon_platform.app.app.tasks.models import Task
-from polygon_platform.app.app.type.models import Type
+from ..tasks.models import Task
+from ..type.models import Type
 
 
 class Event(models.Model):

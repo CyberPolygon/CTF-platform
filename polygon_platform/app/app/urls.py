@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .event.views import show_event, show_event_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(r'^event/(?P<platform_name>[a-z]+)/$', show_event_list),
+    path(r'^event/(?P<platform_name>[a-z]+)/(?P<event_id>[0-9]+)$', show_event)
 ]

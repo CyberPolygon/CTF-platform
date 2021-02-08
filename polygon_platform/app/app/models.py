@@ -1,6 +1,6 @@
 from django.db import models
-from ..files.models import Files
-from ..type.models import Type
+from .files.models import Files
+from .type.models import Type
 
 
 class Task(models.Model):
